@@ -1,0 +1,19 @@
+svg {
+    width: 24px;
+}
+
+.svg-container {
+    cursor: pointer;
+}
+
+.svg-container svg path {
+    transition: all 0.5s;
+}
+
+.svg-container:hover svg path {
+    fill: #fad0c4;
+}
+
+.svg-container:not(:hover) svg path {
+    fill: #ffffff;
+}

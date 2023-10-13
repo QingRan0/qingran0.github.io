@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./src/assets/lib/highlight/styles/a11y-dark.min.css">
+</head>
+<body>
+<pre><code class="language-python">from collections import defaultdict
+from utils.data import parse_result
+
+
+def select_or_refine_results(result_string, rtt_min, rtt_max, loss_min, loss_max):
+    count = 0
+    filtered_result = ""
+    for result in result_string.split('\n'):
+        check_result = parse_result(result)
+        if check_result:
+            dest, rtt, loss = check_result
+            if rtt_max >= float(rtt) >= rtt_min and loss_max >= float(loss) >= loss_min:
+                count += 1
+                filtered_result += f"{dest},{float(rtt):.8f},{float(loss):.8f}\n"
+    return filtered_result
+
+
+def unique_sort_results(result_string):
+    # 去重
+    multi_result = defaultdict(lambda: [0, 0, 0, 0])
+    for result in result_string.split('\n'):
+        check_result = parse_result(result)
+        if check_result:
+            dest, rtt, loss = check_result
+            rtt_sum, loss_sum, rtt_count, loss_count = multi_result[dest]
+            if float(loss) != 1.0:
+                multi_result[dest] = [rtt_sum + float(rtt), loss_sum + float(loss), rtt_count + 1, loss_count + 1]
+            else:
+                multi_result[dest] = [rtt_sum, loss_sum + float(loss), rtt_count, loss_count + 1]
+    collected_result = {dest: (rtt_sum / rtt_count, loss_sum / loss_count)
+                        for dest, (rtt_sum, loss_sum, rtt_count, loss_count) in multi_result.items() if rtt_count}
+    # 排序
+    sorted_result = sorted(collected_result.items(), key=lambda item: (item[1][0], item[1][1]))
+    return "\n".join([f"{dest},{values[0]:.8f},{values[1]:.8f}" for dest, values in sorted_result])
+
+
+def only_ip(result_string):
+    ret = ""
+    for result in result_string.split('\n'):
+        check_result = parse_result(result)
+        if check_result:
+            ret += f"{check_result[0]}\n"
+    return ret
+
+</code></pre>
+<script src="./src/assets/lib/highlight/highlight.min.js"></script>
+<script>hljs.highlightAll()</script>
+</body>
+</html>

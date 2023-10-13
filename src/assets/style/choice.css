@@ -1,0 +1,41 @@
+svg {
+    width: 20px;
+}
+
+.svg-container {
+    cursor: pointer;
+    text-align: center;
+    color: #ffffff;
+}
+
+.svg-container svg path {
+    transition: all 0.5s;
+}
+
+.svg-container:hover svg path {
+    fill: #ff9a9e;
+}
+
+.svg-container:not(:hover) svg path {
+    fill: #ffffff;
+}
+
+.svg-container div {
+    transition: all 0.5s;
+}
+
+.svg-container:hover div{
+    color: #ff9a9e;
+}
+
+.svg-container:not(:hover) div {
+    color: #ffffff;
+}
+
+.active:not(:hover) svg path {
+    fill: #ff9a9e;
+}
+
+.active:not(:hover) div {
+    color: #ff9a9e;
+}
