@@ -1,6 +1,8 @@
 import {useArticleStore} from "@/stores/articleStore";
 import {onMounted} from "vue";
 import ClipboardJS from "clipboard";
+import hljs from 'highlight.js';
+
 import {filesData} from "@/assets/script/fileMap";
 
 export function handlePaper(id) {
