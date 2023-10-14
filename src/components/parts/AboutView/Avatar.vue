@@ -13,6 +13,6 @@
   border-radius: 50%;
   background-size: cover;
   background-clip: padding-box, border-box; background-origin: padding-box, border-box;
-  background-image: url("../../../assets/png/profile.png"), linear-gradient(to bottom, #afafaf 0%, #d7d7d7 100%);
+  background-image: url("../../../assets/jpg/profile.jpg"), linear-gradient(to bottom, #afafaf 0%, #d7d7d7 100%);
 }
 </style>

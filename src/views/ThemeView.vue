@@ -14,8 +14,8 @@ const { theme } = storeToRefs(store)
 
 <template>
   <div id="themes">
-    <img class="theme" src="../assets/png/background-warm.png" alt="" @click="theme = 'warm'">
-    <img class="theme" src="../assets/png/background-cold.png" alt="" @click="theme = 'cold'">
+    <img class="theme" src="../assets/jpg/background-warm.jpg" alt="" @click="theme = 'warm'">
+    <img class="theme" src="../assets/jpg/background-cold.jpg" alt="" @click="theme = 'cold'">
   </div>
 </template>
 

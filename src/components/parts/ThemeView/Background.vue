@@ -9,8 +9,8 @@ console.log(theme)
 </script>
 
 <template>
-  <img v-if="theme === 'warm'" src='@/assets/png/background-warm.png' alt="background">
-  <img v-if="theme === 'cold'" src='@/assets/png/background-cold.png' alt="background">
+  <img v-if="theme === 'warm'" src='@/assets/jpg/background-warm.jpg' alt="background">
+  <img v-if="theme === 'cold'" src='@/assets/jpg/background-cold.jpg' alt="background">
 </template>
 
 <style scoped>
