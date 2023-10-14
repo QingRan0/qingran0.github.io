@@ -1,2 +1,2 @@
 # My Site Lisnow 😀
-## 🚀 [Lisnow](https://lisnow.me){:target="_blank"}
+## 🚀 <a href="http://lisnow.me" target="_blank">lisnow.me</a>
