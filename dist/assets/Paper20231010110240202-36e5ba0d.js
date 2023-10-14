@@ -1,2 +1,0 @@
-import{h as o}from"./paperProcess-9b3fb05c.js";import{o as t,c as s,F as n,b as e,d as a}from"./index-3ad725dc.js";const r=e("p",null,[a("hello "),e("code",null,"I am emoji"),a(" hey")],-1),c=e("pre",null,[e("code",{class:"language-javascript"},`const emoji = '!'
-`)],-1),d={__name:"Paper20231010110240202",setup(l){return o("Paper20231010110240202"),(_,p)=>(t(),s(n,null,[r,c],64))}};export{d as default};
