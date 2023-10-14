@@ -77,9 +77,10 @@ loadArticles(routes)
 
 // 创建路由
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: routes
 })
+console.log(import.meta.env.BASE_URL)
 
 
 // 生命周期
