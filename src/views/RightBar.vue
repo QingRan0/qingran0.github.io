@@ -1,5 +1,5 @@
 <script setup>
-import Word from "@/components/parts/RightBar/Word.vue";
+import Word from "@/components/parts/rightBar/Word.vue";
 </script>
 
 <template>

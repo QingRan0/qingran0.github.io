@@ -1,5 +1,5 @@
 <script setup>
-import Choice from "@/components/parts/LeftBar/Choice.vue";
+import Choice from "@/components/parts/leftBar/Choice.vue";
 import IconLogo from "@/components/icons/IconLogo.vue";
 import IconSearch from "@/components/icons/Tool/IconSearch.vue";
 </script>

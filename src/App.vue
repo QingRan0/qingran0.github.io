@@ -2,7 +2,7 @@
 import LeftBar from "@/views/LeftBar.vue";
 import RightBar from "@/views/RightBar.vue";
 import {ref} from "vue";
-import Background from "@/components/parts/ThemeView/Background.vue";
+import Background from "@/components/parts/themeView/Background.vue";
 
 const style = ref('cold')
 </script>

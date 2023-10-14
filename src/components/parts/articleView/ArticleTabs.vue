@@ -1,11 +1,7 @@
 <script setup>
-import Category from "@/components/parts/ArticleView/Category.vue";
-import Summary from "@/components/parts/ArticleView/Summary.vue";
-import Timeline from "@/components/parts/ArticleView/Timeline.vue";
-import {computed, ref, shallowRef, watch} from "vue";
-import router from "@/router";
-import {use} from "marked";
-import {useRoute} from "vue-router";
+import Category from "@/components/parts/articleView/Category.vue";
+import Summary from "@/components/parts/articleView/Summary.vue";
+import Timeline from "@/components/parts/articleView/Timeline.vue";
 import {useArticleStore} from "@/stores/articleStore";
 import {storeToRefs} from "pinia";
 

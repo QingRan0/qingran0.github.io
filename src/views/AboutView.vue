@@ -1,8 +1,8 @@
 <script setup>
 
 import {ref} from "vue";
-import Relative from "@/components/parts/AboutView/Relative.vue";
-import Avatar from "@/components/parts/AboutView/Avatar.vue";
+import Relative from "@/components/parts/aboutView/Relative.vue";
+import Avatar from "@/components/parts/aboutView/Avatar.vue";
 
 const name = ref('')
 const word = ref('')

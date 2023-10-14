@@ -1,7 +1,7 @@
 <script setup>
 
-import Content from "@/components/parts/ArticleView/Content.vue";
-import ArticleTabs from "@/components/parts/ArticleView/ArticleTabs.vue";
+import Content from "@/components/parts/articleView/Content.vue";
+import ArticleTabs from "@/components/parts/articleView/ArticleTabs.vue";
 </script>
 
 <template>
