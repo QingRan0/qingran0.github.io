@@ -1,6 +1,5 @@
 # use node.js module
 src/local
-src/assets/lib
 
 # Logs
 logs
