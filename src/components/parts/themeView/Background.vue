@@ -14,5 +14,7 @@ console.log(theme)
 </template>
 
 <style scoped>
-
+img {
+  width: 100vw;
+}
 </style>
