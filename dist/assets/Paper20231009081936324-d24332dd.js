@@ -1,1 +1,0 @@
-import{h as e}from"./paperProcess-b0a622a1.js";import{o as a,c as r}from"./index-73f1bb5a.js";const c={__name:"Paper20231009081936324",setup(_){return e("Paper20231009081936324"),(t,p)=>(a(),r("p",null,"2"))}};export{c as default};
